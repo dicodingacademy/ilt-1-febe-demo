@@ -3,7 +3,7 @@
 ## Content
 
 ### Header
-- Logo: assets/calm-logo.png
+- Logo: assets/images/calm-logo.png
 - Navigation:
   - Blog: "#blog"
   - Calm Playlist: "#playlist"
@@ -13,7 +13,7 @@
 - Heading 1: Be Focus and Productive
 - Paragraph: Not just an ordinary headphones. It's designed for meditation.
 - Button: Learn More
-- Hero Image: assets/calm-hero.png
+- Hero Image: assets/images/calm-hero.png
 
 
 ## Color Pallete
