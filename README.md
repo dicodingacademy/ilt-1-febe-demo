@@ -6,7 +6,7 @@
 ![](design-concept-desktop.png?raw=true)
 
 ### Mobile
-![](design-concept-mobile.png?raw=true | width=100)
+![](design-concept-mobile.png?raw=true)
 
 ## Content
 
