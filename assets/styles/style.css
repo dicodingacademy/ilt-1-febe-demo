@@ -89,12 +89,6 @@ main .hero-image img {
     width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-    main .content h2 {
-        font-size: 48px;
-    }
-}
-
 @media screen and (max-width: 750px) {
     header .drawer-button {
         display: inline-block;
@@ -122,4 +116,10 @@ main .hero-image img {
     main {
         flex-direction: column;
     }
-} 
+}
+
+@media screen and (max-width: 1000px) {
+    main .content h2 {
+        font-size: 48px;
+    }
+}
