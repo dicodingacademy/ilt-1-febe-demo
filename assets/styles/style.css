@@ -1,125 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #F9F5ED;
+  font-family: "Inter", sans-serif;
+
+  background-color: #f9f5ed;
 }
 
 header {
-    padding: 16px 32px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+  margin: 0 auto;
+
+  padding: 16px 32px;
+  max-width: 1200px;
+
+  display: flex;
+  align-items: center;
 }
 
 header .drawer-button {
-    padding: 8px;
-    margin-right: 16px;
-    font-weight: bold;
-    font-size: 28px;
-    color: #141E16;
-    background-color: transparent;
-    border: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
+  display: none;
+
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 28px;
+  color: #141e16;
+
+  background-color: transparent;
+
+  cursor: pointer;
 }
 
 header img {
-    margin-right: 32px;
+  margin-right: 32px;
 }
 
 header nav ul li {
-    display: inline;
+  display: inline;
 }
 
 header nav ul li a {
-    display: inline-block;
-    padding: 16px 32px;
-    color: #141E16;
-    text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+
+  color: #141e16;
+  text-decoration: none;
 }
 
 main {
-    padding: 16px 32px;
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
+  padding: 16px 32px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  display: flex;
+  align-items: center;
 }
 
 main .content {
-    padding: 16px;
-    flex: 4;
+  padding: 16px;
+  flex: 4;
 }
 
 main .content h2 {
-    font-size: 64px;
-    font-weight: bold;
+  font-size: 64px;
+  font-weight: bold;
 }
 
 main .content p {
-    font-size: 18px;
-    margin-top: 32px;
+  font-size: 18px;
+  margin-top: 32px;
 }
 
 main .content button {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background-color: #3B855B;
-    padding: 12px 16px;
-    border: 0;
-    border-radius: 8px;
-    margin-top: 64px;
-    cursor: pointer;
+  margin-top: 64px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+
+  background-color: #3b855b;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+
+  cursor: pointer;
 }
 
 main .hero-image {
-    flex: 5;
-    padding: 16px;
+  flex: 5;
+  padding: 16px;
 }
 
 main .hero-image img {
-    width: 100%;
+  width: 100%;
 }
 
-@media screen and (max-width: 750px) {
-    header .drawer-button {
-        display: inline-block;
-    }
+@media (max-width: 750px) {
+  header {
+    justify-content: space-between;
+  }
 
-    header nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translateX(-200px);
-        background-color: white;
-        min-height: 100vh;
-        width: 200px;
-        transition: transform 0.3s ease-in-out;
-    }
+  header .drawer-button {
+    display: inline-block;
+  }
 
-    header nav ul li, header nav ul li a {
-        display: block;
-    }
+  header nav {
+    background-color: white;
+    min-height: 100vh;
+    width: 200px;
 
-    header nav.open {
-        transform: translateX(0);
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
 
-    main {
-        flex-direction: column;
-    }
+    transform: translateX(-200px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  header nav ul li,
+  header nav ul li a {
+    display: block;
+  }
+
+  header nav.open {
+    transform: translateX(0);
+  }
+
+  main {
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width: 1000px) {
-    main .content h2 {
-        font-size: 48px;
-    }
+@media (max-width: 1000px) {
+  main .content h2 {
+    font-size: 48px;
+  }
 }

@@ -1,11 +1,12 @@
-const drawerButton = document.querySelector('#drawerButton');
-const drawerNavigation = document.querySelector('#drawerNavigation');
-const main = document.querySelector('main');
+const drawerButton = document.querySelector('#drawer-button');
+const drawerNavigation = document.querySelector('#main-nav');
 
 drawerButton.addEventListener('click', () => {
-    drawerNavigation.classList.toggle('open');
+  drawerNavigation.classList.toggle('open');
 });
 
-main.addEventListener('click', () => {
+document.body.addEventListener('click', (event) => {
+  if (!drawerNavigation.contains(event.target) && !drawerButton.contains(event.target)) {
     drawerNavigation.classList.remove('open');
-});
+  }
+})
