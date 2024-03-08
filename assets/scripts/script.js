@@ -9,4 +9,4 @@ document.body.addEventListener('click', (event) => {
   if (!drawerNavigation.contains(event.target) && !drawerButton.contains(event.target)) {
     drawerNavigation.classList.remove('open');
   }
-})
+});
